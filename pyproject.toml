@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "skynix-cli"
+version = "0.1.2-3"
+description = ""
+authors = ["AbdelrhmanNile <abdelrhmannile@gmail.com>"]
+readme = "README.md"
+packages = [{include = "skynix_cli"}]
+
+[tool.poetry.scripts]
+skynix-cli = "skynix_cli.skynixcli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.6.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
