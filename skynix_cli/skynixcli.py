@@ -1,6 +1,5 @@
 import typer
 import os
-import subprocess
 import json
 
 cli = typer.Typer()
