@@ -1,6 +1,7 @@
 import typer
 import os
 import json
+import shutil
 
 cli = typer.Typer()
 
@@ -13,7 +14,7 @@ def pull():
     
     if os.path.exists(f"{path}/skynix"):
         config = json.load(open(f"{path}/skynix/config.json"))
-        os.rmdir(f"{path}/skynix")
+        shutil.rmtree(f"{path}/skynix")
     
     os.system(f"cd {path} && git clone {repo}")
     typer.echo("Done pulling")
