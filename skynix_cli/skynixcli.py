@@ -31,7 +31,8 @@ def pull():
                   "nlpcloud_tokens": ["","","",""],
                   "forefront_token": "",
                   "forefront_gptj_url": "",
-                  "forefront_codegen_url": ""}
+                  "forefront_codegen_url": "",
+                  "openweathermap_token": ""}
         
     with open(f"{path}/skynix/config.json", "w", encoding="utf-8") as f:
         json.dump(config, f, indent=4)

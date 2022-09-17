@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "skynix-cli"
-version = "0.1.3-2"
+version = "0.1.3-3"
 description = ""
 authors = ["AbdelrhmanNile <abdelrhmannile@gmail.com>"]
 readme = "README.md"
