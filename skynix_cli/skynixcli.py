@@ -28,10 +28,7 @@ def pull():
         config["python"] = f"{venv.strip()}/bin/python"
     else:
         config = {"python": f"{venv.strip()}/bin/python",
-                  "nlpcloud_tokens": ["","","",""],
-                  "forefront_token": "",
-                  "forefront_gptj_url": "",
-                  "forefront_codegen_url": "",
+                  "poe_token": "",
                   "openweathermap_token": ""}
         
     with open(f"{path}/skynix/config.json", "w", encoding="utf-8") as f:
